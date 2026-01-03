@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a0029, #3a004f, #ff2ea6);
+    min-height: 100vh;
+    color: white;
+}
+
+/* CSS is use for NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* CSS is use for HERO */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 500px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+/* CSS is use for BUTTONS */
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    background: #ff2ea6;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* CSS is use for QUIZ */
+.quiz-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    background: #ffffff;
+    color: #000;
+}
+
+#options button.selected {
+    background: #ff2ea6;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* It is use to make RESPONSIVE */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

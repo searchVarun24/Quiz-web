@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Quiz.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Start screen section-->
+<section class="hero" id="start-screen">
+    <div class="hero-content">
+        <h1>Quiz Website</h1>
+        <p>
+            Test your knowledge with our interactive quiz.
+            Answer questions and see your score instantly.
+        </p>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+</section>
+
+
+
+
+<!-- Quiz screen section -->
+<section class="quiz-container hidden" id="quiz-screen">
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <button id="next-btn">Next</button>
+</section>
+
+<!-- Result screen section -->
+<section class="quiz-container hidden" id="result-screen">
+    <h2 id="score"></h2>
+    <button onclick="location.reload()">Restart Quiz</button>
+</section>
+
+</body>
+</html>
